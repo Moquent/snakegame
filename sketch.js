@@ -19,8 +19,11 @@ function setup() {
 }
 
 function draw() {
-  scale(scl);
   background("yellow");
+  textSize(20);
+  fill("blue")
+  text("Score:"+snake.len, 5, 20);
+  scale(scl);
 
   if (snake.eat(food)) {
     foodLocation();
